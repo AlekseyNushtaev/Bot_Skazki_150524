@@ -33,7 +33,7 @@ async def terem(cb: CallbackQuery):
     )
 
 
-@router.callback_query(F.data == "bears_3")
+@router.callback_query(F.data == "terem_7")
 async def terem_7(cb: CallbackQuery):
     await cb.message.delete()
     await cb.message.answer_photo(
