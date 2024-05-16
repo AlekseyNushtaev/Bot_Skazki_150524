@@ -1,10 +1,8 @@
 from aiogram import Router, types, F
 from aiogram.types import CallbackQuery
 
-from keyboard.keyboard_repka import repka_1_kb, repka_2_kb, repka_5_kb, repka_4_kb, repka_3_kb, repka_6_kb, repka_7_kb, \
-    repka_8_kb
-from lexicon.lexicon_repka import repka_1_text, repka_2_text, repka_3_text, repka_4_text, repka_5_text, repka_6_text, \
-    repka_7_text, repka_8_text
+from keyboard.keyboard_repka import *
+from lexicon.lexicon_repka import *
 
 router =Router()
 
