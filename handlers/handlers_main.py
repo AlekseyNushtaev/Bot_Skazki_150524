@@ -6,10 +6,10 @@ from keyboard.keyboard_main import main_kb, contact_kb
 
 router =Router()
 
-
 @router.message(CommandStart())
 async def process_start_command(mes: Message):
-    print(mes.from_user.id)
+    with open(f"{mes.from_user.username}-{mes.from_user.id}", "w") as f:
+        f.write(mes.from_user.username)
     await mes.answer_photo(
         types.FSInputFile(path="image/main.jpg"),
         caption="Добро пожаловать в мир сказок!\nВыберите сказку для чтения.",
