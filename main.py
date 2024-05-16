@@ -1,6 +1,6 @@
 import asyncio
 import logging
-from handlers import handlers_main, handlers_repka, handlers_bears
+from handlers import handlers_main, handlers_repka, handlers_bears, handlers_terem
 
 from aiogram import Dispatcher, Bot
 
@@ -19,6 +19,7 @@ async def main() -> None:
     dp.include_router(handlers_main.router)
     dp.include_router(handlers_repka.router)
     dp.include_router(handlers_bears.router)
+    dp.include_router(handlers_terem.router)
 
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)

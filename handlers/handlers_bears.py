@@ -1,7 +1,7 @@
 from aiogram import Router, types, F
 from aiogram.types import CallbackQuery
 
-from keyboard.keyboard_bears import create_kb
+from keyboard.keyboard_creator import create_kb
 from lexicon.lexicon_bears import bears_text
 
 router =Router()
