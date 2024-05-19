@@ -15,7 +15,7 @@ repka_6_back = InlineKeyboardButton(text="Назад", callback_data="repka_5")
 repka_6_forward = InlineKeyboardButton(text="Вперед", callback_data="repka_7")
 repka_7_back = InlineKeyboardButton(text="Назад", callback_data="repka_6")
 repka_7_forward = InlineKeyboardButton(text="Вперед", callback_data="repka_8")
-repka_8_back = InlineKeyboardButton(text="Вперед", callback_data="repka_7")
+repka_8_back = InlineKeyboardButton(text="Назад", callback_data="repka_7")
 
 
 repka_1_kb = InlineKeyboardMarkup(
